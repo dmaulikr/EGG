@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.58695652173915"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="oj8-Pn-Mkq">
             <objects>
-                <viewController id="4ng-MA-yMZ" sceneMemberID="viewController">
+                <viewController id="4ng-MA-yMZ" customClass="CameraViewController" customModule="HumD" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UIj-sC-1GP"/>
                         <viewControllerLayoutGuide type="bottom" id="X7v-LA-G2S"/>

@@ -10,6 +10,8 @@ import UIKit
 import CoreLocation
 import MapKit
 
+//import PlacesLoaders
+
 class MapController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView?
@@ -32,6 +34,18 @@ class MapController: UIViewController, CLLocationManagerDelegate {
         
         print("STARTING TO UPDATE")
         userLocation?.startUpdatingLocation()
+        
+        
+//        PlacesLoader.sharedInstance().loadPOIsForLocation(locations.last!, radius: 1000, successHandler: {(response: [NSObject : AnyObject]) -> Void in
+//            print("Response: \(response)")
+//            //more code here
+//            //more code here
+//            }, errorHandler: {(error: NSError) -> Void in
+//                print("Error: \(error!)")
+//        })
+//
+//        
+//        
     }
 
     override func didReceiveMemoryWarning() {
