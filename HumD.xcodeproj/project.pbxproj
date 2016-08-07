@@ -20,6 +20,9 @@
 		4C5DAF671D576A8E00E0FC9F /* ARCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DAF5C1D576A8E00E0FC9F /* ARCoordinate.m */; };
 		4C5DAF681D576A8E00E0FC9F /* ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DAF5D1D576A8E00E0FC9F /* ARKit.m */; };
 		4C5DAF691D576A8E00E0FC9F /* GEOLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DAF611D576A8E00E0FC9F /* GEOLocations.m */; };
+		4C5DAF6B1D57755300E0FC9F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DAF6A1D57755300E0FC9F /* Place.swift */; };
+		4CA6FE791D5779D600F751B3 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA6FE781D5779D600F751B3 /* MarkerView.swift */; };
+		4CA6FE7B1D577F5300F751B3 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA6FE7A1D577F5300F751B3 /* Twitter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		4C5DAF621D576A8E00E0FC9F /* ARKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKit.h; sourceTree = "<group>"; };
 		4C5DAF631D576A8E00E0FC9F /* GEOLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOLocations.h; sourceTree = "<group>"; };
 		4C5DAF641D576A8E00E0FC9F /* ARLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationDelegate.h; sourceTree = "<group>"; };
+		4C5DAF6A1D57755300E0FC9F /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4CA6FE781D5779D600F751B3 /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		4CA6FE7A1D577F5300F751B3 /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,9 @@
 			children = (
 				4C51A9F81D56835D00BD0FAD /* MapController.swift */,
 				4C51AA241D56936D00BD0FAD /* CameraViewController.swift */,
+				4C5DAF6A1D57755300E0FC9F /* Place.swift */,
+				4CA6FE781D5779D600F751B3 /* MarkerView.swift */,
+				4CA6FE7A1D577F5300F751B3 /* Twitter.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -343,7 +352,10 @@
 				4C51A9F71D56835D00BD0FAD /* AppDelegate.swift in Sources */,
 				4C51AA251D56936D00BD0FAD /* CameraViewController.swift in Sources */,
 				4C5DAF651D576A8E00E0FC9F /* AugmentedRealityController.m in Sources */,
+				4C5DAF6B1D57755300E0FC9F /* Place.swift in Sources */,
 				4C5DAF681D576A8E00E0FC9F /* ARKit.m in Sources */,
+				4CA6FE791D5779D600F751B3 /* MarkerView.swift in Sources */,
+				4CA6FE7B1D577F5300F751B3 /* Twitter.swift in Sources */,
 				4C5DAF661D576A8E00E0FC9F /* ARGeoCoordinate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

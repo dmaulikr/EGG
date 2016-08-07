@@ -9,16 +9,21 @@
 import UIKit
 import MapKit
 
-class CameraViewController: UIViewController, ARLocationDelegate, ARDelegate, ARMarkerDelegate {
+
+class CameraViewController: UIViewController, ARLocationDelegate, ARDelegate, ARMarkerDelegate, MarkerViewDelegate {
     
-    var locations: NSArray?
+    var locations = [Place]()
     var userLocation: MKUserLocation?
     var arController: AugmentedRealityController?
-    var geoLocation: NSMutableArray?
+    var geoLocationsArray = [ARGeoCoordinate]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let aPlaceLocation = CLLocation(latitude: 40.36490159, longitude: -74.16752175)
+        let aPlace = Place(_location: aPlaceLocation, _reference: "BLAH", _placeName: "MLH Prime", _address: "Bell Works", _phoneNumber: "3477571216", _website: "jessicajoseph.co")
+        
+        locations.append(aPlace)
         
         print("should be doing stuff")
         if arController == nil {
@@ -30,6 +35,9 @@ class CameraViewController: UIViewController, ARLocationDelegate, ARDelegate, AR
         arController?.scaleViewsBasedOnDistance = true
         arController?.rotateViewsBasedOnPerspective = true
         arController?.debugMode = false
+        
+        geoLocations()
+ 
         
     }
     
@@ -49,10 +57,33 @@ class CameraViewController: UIViewController, ARLocationDelegate, ARDelegate, AR
     func didUpdate(_ orientation: UIDeviceOrientation) {
     }
     
+    func generateGeoLocations() {
+        for place in locations {
+            let coordinate:ARGeoCoordinate = ARGeoCoordinate(location: place.location, locationTitle: place.placeName)
+            coordinate.calibrate(usingOrigin: userLocation?.location)
+            
+            let markerView:MarkerView = MarkerView(_coordinate: coordinate, _delegate: self)
+            coordinate.displayView = markerView
+            
+            arController?.addCoordinate(coordinate)
+            geoLocationsArray.append(coordinate)
+            
+            print("IN GENERATOR, new geolocations \(geoLocationsArray)")
+        }
+        
+    }
+
     
     
-    func geoLocations() -> NSMutableArray! {
-        return nil
+    func geoLocations() -> NSMutableArray{
+        
+        print("IN GEOLOCATIONS")
+        print("Geolocations count is \(geoLocationsArray.count)")
+        if(geoLocationsArray.count == 0) {
+            generateGeoLocations()
+        }
+        return NSMutableArray(array: geoLocationsArray) ;
+        
     }
     
     func locationClicked(_ coordinate: ARGeoCoordinate!) {
@@ -61,5 +92,13 @@ class CameraViewController: UIViewController, ARLocationDelegate, ARDelegate, AR
     func didTapMarker(_ coordinate: ARGeoCoordinate!) {
         
     }
+    
+    func didTouchMarkerView(_ markerView:MarkerView) {
+        
+    }
+    
+    
+    
+    
     
 }
