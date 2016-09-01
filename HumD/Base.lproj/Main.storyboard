@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iDw-yO-abZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="16A286a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iDw-yO-abZ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,12 +17,25 @@
                     <view key="view" contentMode="scaleToFill" id="NR9-6F-nhN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qx-NF-2vZ">
+                                <color key="backgroundColor" red="1" green="0.91993990384615387" blue="0.11930288461538462" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Twitter Login Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Qx-NF-2vZ" firstAttribute="centerY" secondItem="NR9-6F-nhN" secondAttribute="centerY" id="kvv-q1-dyx"/>
+                            <constraint firstItem="6Qx-NF-2vZ" firstAttribute="centerX" secondItem="NR9-6F-nhN" secondAttribute="centerX" id="p8c-ly-nIk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="twtitterLogin" destination="6Qx-NF-2vZ" id="xo9-wD-5oE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XUN-Aa-ggY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486" y="172"/>
+            <point key="canvasLocation" x="-487.19999999999999" y="171.36431784107947"/>
         </scene>
         <!--Map Controller-->
         <scene sceneID="tne-QT-ifu">
