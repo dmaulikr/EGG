@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>AR</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Needs location to function</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Update location</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -24,8 +18,33 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>9a1ded7d487c12e79f7314e6f593600e83b215e1</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>hWNFY7d3udvsYyHmbSpQWvPwO</string>
+					<key>consumerSecret</key>
+					<string>W2XDqCt6RxIRrawKoLWp0YAQkRfR20PEX5PT5Xw5Ic5Hzx5lQY</string>
+				</dict>
+				<key>KitName</key>
+				<string>Twitter</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>AR</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Update location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Needs location to function</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

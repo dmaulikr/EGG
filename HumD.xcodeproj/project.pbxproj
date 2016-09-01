@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0942061D6116D500580822 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0942051D6116D500580822 /* Fabric.framework */; };
 		4C51A9F71D56835D00BD0FAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C51A9F61D56835D00BD0FAD /* AppDelegate.swift */; };
 		4C51A9F91D56835D00BD0FAD /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C51A9F81D56835D00BD0FAD /* MapController.swift */; };
 		4C51A9FC1D56835D00BD0FAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C51A9FA1D56835D00BD0FAD /* Main.storyboard */; };
@@ -22,7 +23,8 @@
 		4C5DAF691D576A8E00E0FC9F /* GEOLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DAF611D576A8E00E0FC9F /* GEOLocations.m */; };
 		4C5DAF6B1D57755300E0FC9F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5DAF6A1D57755300E0FC9F /* Place.swift */; };
 		4CA6FE791D5779D600F751B3 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA6FE781D5779D600F751B3 /* MarkerView.swift */; };
-		4CA6FE7B1D577F5300F751B3 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA6FE7A1D577F5300F751B3 /* Twitter.swift */; };
+		4CA6FE7B1D577F5300F751B3 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA6FE7A1D577F5300F751B3 /* TwitterViewController.swift */; };
+		C668B4DBB1F77EFE8EA5E935 /* Pods_HumD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8174F16CFC86DA5DFD70DEAD /* Pods_HumD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4549968B2C3711DD8FC81CBF /* Pods-HumD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumD.release.xcconfig"; path = "Pods/Target Support Files/Pods-HumD/Pods-HumD.release.xcconfig"; sourceTree = "<group>"; };
+		4C0942051D6116D500580822 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		4C51A9F31D56835D00BD0FAD /* HumD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C51A9F61D56835D00BD0FAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C51A9F81D56835D00BD0FAD /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
@@ -73,7 +77,9 @@
 		4C5DAF641D576A8E00E0FC9F /* ARLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationDelegate.h; sourceTree = "<group>"; };
 		4C5DAF6A1D57755300E0FC9F /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		4CA6FE781D5779D600F751B3 /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
-		4CA6FE7A1D577F5300F751B3 /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
+		4CA6FE7A1D577F5300F751B3 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		8174F16CFC86DA5DFD70DEAD /* Pods_HumD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DA82C7BEDD28BF5D0B7381 /* Pods-HumD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HumD/Pods-HumD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C668B4DBB1F77EFE8EA5E935 /* Pods_HumD.framework in Frameworks */,
+				4C0942061D6116D500580822 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +112,7 @@
 		4C51A9EA1D56835C00BD0FAD = {
 			isa = PBXGroup;
 			children = (
+				4C0942051D6116D500580822 /* Fabric.framework */,
 				4C5DAF591D576A8E00E0FC9F /* AugmentedRealityController.m */,
 				4C5DAF5A1D576A8E00E0FC9F /* ARGeoCoordinate.m */,
 				4C5DAF5B1D576A8E00E0FC9F /* AugmentedRealityController.h */,
@@ -122,6 +131,7 @@
 				4C51A9F41D56835D00BD0FAD /* Products */,
 				4C57001F1D56DE350090CC30 /* Frameworks */,
 				4C5DAF581D576A8D00E0FC9F /* HumD-Bridging-Header.h */,
+				9F8E254EE6E4D48A8D3175F3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,7 +191,7 @@
 				4C51AA241D56936D00BD0FAD /* CameraViewController.swift */,
 				4C5DAF6A1D57755300E0FC9F /* Place.swift */,
 				4CA6FE781D5779D600F751B3 /* MarkerView.swift */,
-				4CA6FE7A1D577F5300F751B3 /* Twitter.swift */,
+				4CA6FE7A1D577F5300F751B3 /* TwitterViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -190,13 +200,25 @@
 			isa = PBXGroup;
 			children = (
 				4C5700201D56DE350090CC30 /* HumD.xcodeproj */,
+				8174F16CFC86DA5DFD70DEAD /* Pods_HumD.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4C5700211D56DE350090CC30 /* Products */ = {
 			isa = PBXGroup;
+			children = (
+			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9F8E254EE6E4D48A8D3175F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4DA82C7BEDD28BF5D0B7381 /* Pods-HumD.debug.xcconfig */,
+				4549968B2C3711DD8FC81CBF /* Pods-HumD.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +228,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C51AA1B1D56835D00BD0FAD /* Build configuration list for PBXNativeTarget "HumD" */;
 			buildPhases = (
+				60EABAC25670242D40CD952A /* Check Pods Manifest.lock */,
 				4C51A9EF1D56835D00BD0FAD /* Sources */,
 				4C51A9F01D56835D00BD0FAD /* Frameworks */,
 				4C51A9F11D56835D00BD0FAD /* Resources */,
+				4C7F04641D57AA5800FB39FC /* ShellScript */,
+				A199C8186F302CDEE3B8BEB0 /* Embed Pods Frameworks */,
+				37143ADAADA4BB7391FA4CAE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,6 +367,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37143ADAADA4BB7391FA4CAE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HumD/Pods-HumD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C7F04641D57AA5800FB39FC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 9a1ded7d487c12e79f7314e6f593600e83b215e1 b702e45603d9fd9a7ecb4f6986c984d829aad4da5d4a827e8fc468273badac11";
+		};
+		60EABAC25670242D40CD952A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A199C8186F302CDEE3B8BEB0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HumD/Pods-HumD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C51A9EF1D56835D00BD0FAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -355,7 +442,7 @@
 				4C5DAF6B1D57755300E0FC9F /* Place.swift in Sources */,
 				4C5DAF681D576A8E00E0FC9F /* ARKit.m in Sources */,
 				4CA6FE791D5779D600F751B3 /* MarkerView.swift in Sources */,
-				4CA6FE7B1D577F5300F751B3 /* Twitter.swift in Sources */,
+				4CA6FE7B1D577F5300F751B3 /* TwitterViewController.swift in Sources */,
 				4C5DAF661D576A8E00E0FC9F /* ARGeoCoordinate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,9 +587,14 @@
 		};
 		4C51AA1C1D56835D00BD0FAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DA82C7BEDD28BF5D0B7381 /* Pods-HumD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HumD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.HumD;
@@ -515,9 +607,14 @@
 		};
 		4C51AA1D1D56835D00BD0FAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4549968B2C3711DD8FC81CBF /* Pods-HumD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HumD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.HumD;
