@@ -21,6 +21,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qx-NF-2vZ">
                                 <color key="backgroundColor" red="1" green="0.91993990384615387" blue="0.11930288461538462" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Twitter Login Button"/>
+                                <connections>
+                                    <action selector="twitterLogin:" destination="iDw-yO-abZ" eventType="touchUpInside" id="wwZ-Qd-rdi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
