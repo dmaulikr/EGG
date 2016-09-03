@@ -1,4 +1,4 @@
-# Egg, local news AR
+# EGG
 
 Eggperience the local news around you.
 AR bitch.
