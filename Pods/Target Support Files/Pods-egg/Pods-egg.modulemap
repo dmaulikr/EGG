@@ -1,0 +1,6 @@
+framework module Pods_egg {
+  umbrella header "Pods-egg-umbrella.h"
+
+  export *
+  module * { export * }
+}
