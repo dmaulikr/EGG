@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -20,40 +21,54 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTF-GT-zjK">
-                                <frame key="frameInset" minX="20" minY="676" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTF-GT-zjK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BLg-w6-VC4"/>
+                                    <constraint firstAttribute="width" constant="40" id="rZi-zm-xk0"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="camera"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-NC-s7p">
-                                <frame key="frameInset" minX="354" minY="676" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-NC-s7p">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iCB-ng-P72"/>
+                                    <constraint firstAttribute="width" constant="40" id="pY4-Ci-Xhz"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="map"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EGG." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pl6-J4-vfk">
-                                <frame key="frameInset" minX="130" minY="262" width="155" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGG." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pl6-J4-vfk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="a72-RG-DFz"/>
+                                    <constraint firstAttribute="height" constant="100" id="ctj-NQ-Sa6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="PoplarStd" family="Poplar Std" pointSize="100"/>
                                 <color key="textColor" red="0.96078431372549022" green="0.0" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-90-PnB">
-                                <frame key="frameInset" minX="157" minY="373" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-90-PnB">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="gaR-hT-8uC"/>
+                                    <constraint firstAttribute="height" constant="100" id="wbD-Ua-cKo"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="twitter-notlogged"/>
                                 <connections>
                                     <action selector="twitterLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VlJ-oB-XVk"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HAG-NC-ryl">
-                                <frame key="frameInset" minX="87" minY="78" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pl6-J4-vfk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5HP-ds-FGj"/>
+                            <constraint firstItem="oCi-NC-s7p" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RkX-mS-4WU"/>
+                            <constraint firstItem="KTF-GT-zjK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VP4-P5-WvR"/>
+                            <constraint firstItem="bWQ-90-PnB" firstAttribute="top" secondItem="pl6-J4-vfk" secondAttribute="bottom" constant="11" id="bGn-QW-eoR"/>
+                            <constraint firstItem="bWQ-90-PnB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h9t-KG-TOa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KTF-GT-zjK" secondAttribute="bottom" constant="20" id="maq-iP-dID"/>
+                            <constraint firstItem="pl6-J4-vfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="moL-Kl-Dj5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oCi-NC-s7p" secondAttribute="bottom" constant="20" id="s6j-gs-qYD"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="twitterLogin" destination="bWQ-90-PnB" id="LhJ-RE-6fU"/>
