@@ -89,7 +89,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     func randomLocation(_ location:CLLocation, number:Int) {
         for _ in 1...number {
             var newLocation = CLLocation(latitude: location.coordinate.latitude + 0.005 * Double.random(min: -1.0, 1.0) , longitude: location.coordinate.longitude + 0.005 * Double.random(min: -1.0, 1.0))
-            var place = Place(_location: newLocation, _reference: "_reference", _placeName: "Nio Nguyen's home", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+            var place = Place(_location: newLocation, _reference: "_reference", _placeName: "Steven Piggy's Park", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
             locations.append(place)
         }
         showLocations()
@@ -97,7 +97,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     @IBAction func addLoctionAction() {
         if (currentLocation != nil) {
-            let place = Place(_location: currentLocation!, _reference: "_reference", _placeName: "Nio Nguyen's home", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
+            let place = Place(_location: currentLocation!, _reference: "_reference", _placeName: "bleeh bleeh, nwew place", _address: "_address", _phoneNumber: "_phoneNumber", _website: "_website")
             locations.append(place)
         }
         showLocations()
@@ -110,7 +110,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     @IBAction func cameraAction () {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let flipsideViewController = storyBoard.instantiateViewController(withIdentifier: "CameraViewController") as! CameraViewController
+        let flipsideViewController = storyBoard.instantiateViewController(withIdentifier: "Camera") as! CameraViewController
         flipsideViewController.locations = locations
         flipsideViewController.userLocation = _mapView.userLocation
         self.present(flipsideViewController, animated:true, completion:nil)

@@ -133,6 +133,7 @@
 			children = (
 				4CBA8A971D823DE500B8EA70 /* ARKit */,
 				4C9C38C11D81F8C100E16F57 /* egg */,
+				4CBA8ABB1D82436A00B8EA70 /* Supporting Files */,
 				4C9C38D61D81F8C100E16F57 /* eggTests */,
 				4C9C38E11D81F8C100E16F57 /* eggUITests */,
 				4C9C38C01D81F8C100E16F57 /* Products */,
@@ -158,7 +159,6 @@
 				4CA6B4CC1D820E6E00D94026 /* Classes */,
 				4CBA8AB21D82410B00B8EA70 /* Models */,
 				4CA6B4CB1D820E5D00D94026 /* Resources */,
-				4C9C38CE1D81F8C100E16F57 /* Info.plist */,
 			);
 			path = egg;
 			sourceTree = "<group>";
@@ -241,6 +241,15 @@
 				4CBA8AB51D82411A00B8EA70 /* PlaceAnnotation.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		4CBA8ABB1D82436A00B8EA70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C9C38CE1D81F8C100E16F57 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = egg;
 			sourceTree = "<group>";
 		};
 		B29C57317CFEADA799976B8B /* Frameworks */ = {

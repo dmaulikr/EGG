@@ -100,6 +100,28 @@
                                 <frame key="frameInset" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGM-EX-BI9">
+                                <frame key="frameInset" minX="158" minY="639" width="98" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PoplarStd" family="Poplar Std" pointSize="30"/>
+                                <state key="normal" title="CAMERA.">
+                                    <color key="titleColor" red="0.97927111387252808" green="0.1668601930141449" blue="0.4158707857131958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraAction" destination="Lze-82-qq7" eventType="touchUpInside" id="9Km-6l-Dc2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeq-TV-EpU">
+                                <frame key="frameInset" minX="183" minY="28" width="49" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PoplarStd" family="Poplar Std" pointSize="30"/>
+                                <state key="normal" title="ADD.">
+                                    <color key="titleColor" red="0.97927111389999999" green="0.16686019299999999" blue="0.41587078570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addLoctionAction" destination="Lze-82-qq7" eventType="touchUpInside" id="E1v-oL-itK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -114,7 +136,7 @@
         <!--Camera View Controller-->
         <scene sceneID="fzB-Nq-wq8">
             <objects>
-                <viewController id="GX7-fR-BJf" customClass="CameraViewController" customModule="egg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Camera" id="GX7-fR-BJf" customClass="CameraViewController" customModule="egg" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B2o-0S-0s7"/>
                         <viewControllerLayoutGuide type="bottom" id="KOI-9t-ieG"/>
