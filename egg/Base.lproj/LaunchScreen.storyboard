@@ -18,12 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch-screen-og" translatesAutoresizingMaskIntoConstraints="NO" id="QXi-vQ-FwN">
-                                <frame key="frameInset" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen-og" translatesAutoresizingMaskIntoConstraints="NO" id="QXi-vQ-FwN"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="QXi-vQ-FwN" secondAttribute="bottom" id="Cco-aN-vBu"/>
+                            <constraint firstItem="QXi-vQ-FwN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="KL7-0k-Hei"/>
+                            <constraint firstAttribute="trailing" secondItem="QXi-vQ-FwN" secondAttribute="trailing" id="euC-Vr-cl1"/>
+                            <constraint firstItem="QXi-vQ-FwN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="osA-Eo-vrF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

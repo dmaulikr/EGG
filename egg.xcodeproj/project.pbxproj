@@ -16,6 +16,19 @@
 		4CA6B4CA1D820E5A00D94026 /* PoplarStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CA6B4C91D820E5A00D94026 /* PoplarStd.otf */; };
 		4CA6B4CE1D8212F300D94026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA6B4CD1D8212F300D94026 /* Assets.xcassets */; };
 		4CA6B4D01D82148C00D94026 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA6B4CF1D82148C00D94026 /* TwitterViewController.swift */; };
+		4CBA8A991D823DFE00B8EA70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA8A981D823DFE00B8EA70 /* CoreLocation.framework */; };
+		4CBA8A9B1D823E0800B8EA70 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA8A9A1D823E0800B8EA70 /* MapKit.framework */; };
+		4CBA8A9D1D823F0500B8EA70 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8A9C1D823F0500B8EA70 /* CameraViewController.swift */; };
+		4CBA8A9F1D823F1300B8EA70 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8A9E1D823F1300B8EA70 /* MapViewController.swift */; };
+		4CBA8AAD1D82408F00B8EA70 /* ARCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8AA21D82408F00B8EA70 /* ARCoordinate.m */; };
+		4CBA8AAE1D82408F00B8EA70 /* ARGeoCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8AA41D82408F00B8EA70 /* ARGeoCoordinate.m */; };
+		4CBA8AAF1D82408F00B8EA70 /* ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8AA61D82408F00B8EA70 /* ARKit.m */; };
+		4CBA8AB01D82408F00B8EA70 /* AugmentedRealityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8AAA1D82408F00B8EA70 /* AugmentedRealityController.m */; };
+		4CBA8AB11D82408F00B8EA70 /* GEOLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8AAC1D82408F00B8EA70 /* GEOLocations.m */; };
+		4CBA8AB61D82411A00B8EA70 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8AB31D82411A00B8EA70 /* MarkerView.swift */; };
+		4CBA8AB71D82411A00B8EA70 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8AB41D82411A00B8EA70 /* Place.swift */; };
+		4CBA8AB81D82411A00B8EA70 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8AB51D82411A00B8EA70 /* PlaceAnnotation.swift */; };
+		4CBA8ABA1D82424400B8EA70 /* Extends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA8AB91D82424400B8EA70 /* Extends.swift */; };
 		F339E77E1726A4C64F40A1EA /* Pods_egg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654D43BC9FD2237362C73E8 /* Pods_egg.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +66,27 @@
 		4CA6B4C91D820E5A00D94026 /* PoplarStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoplarStd.otf; sourceTree = "<group>"; };
 		4CA6B4CD1D8212F300D94026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		4CA6B4CF1D82148C00D94026 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		4CBA8A981D823DFE00B8EA70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4CBA8A9A1D823E0800B8EA70 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4CBA8A9C1D823F0500B8EA70 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		4CBA8A9E1D823F1300B8EA70 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4CBA8AA01D823F6900B8EA70 /* AR-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AR-BridgingHeader.h"; sourceTree = "<group>"; };
+		4CBA8AA11D82408F00B8EA70 /* ARCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCoordinate.h; sourceTree = "<group>"; };
+		4CBA8AA21D82408F00B8EA70 /* ARCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCoordinate.m; sourceTree = "<group>"; };
+		4CBA8AA31D82408F00B8EA70 /* ARGeoCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoCoordinate.h; sourceTree = "<group>"; };
+		4CBA8AA41D82408F00B8EA70 /* ARGeoCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoCoordinate.m; sourceTree = "<group>"; };
+		4CBA8AA51D82408F00B8EA70 /* ARKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKit.h; sourceTree = "<group>"; };
+		4CBA8AA61D82408F00B8EA70 /* ARKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARKit.m; sourceTree = "<group>"; };
+		4CBA8AA71D82408F00B8EA70 /* ARLocationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationDelegate.h; sourceTree = "<group>"; };
+		4CBA8AA81D82408F00B8EA70 /* ARViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewProtocol.h; sourceTree = "<group>"; };
+		4CBA8AA91D82408F00B8EA70 /* AugmentedRealityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AugmentedRealityController.h; sourceTree = "<group>"; };
+		4CBA8AAA1D82408F00B8EA70 /* AugmentedRealityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AugmentedRealityController.m; sourceTree = "<group>"; };
+		4CBA8AAB1D82408F00B8EA70 /* GEOLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEOLocations.h; sourceTree = "<group>"; };
+		4CBA8AAC1D82408F00B8EA70 /* GEOLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEOLocations.m; sourceTree = "<group>"; };
+		4CBA8AB31D82411A00B8EA70 /* MarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		4CBA8AB41D82411A00B8EA70 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4CBA8AB51D82411A00B8EA70 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		4CBA8AB91D82424400B8EA70 /* Extends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extends.swift; sourceTree = "<group>"; };
 		9EF1F238CFAB502DF3632BBA /* Pods-egg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-egg.release.xcconfig"; path = "Pods/Target Support Files/Pods-egg/Pods-egg.release.xcconfig"; sourceTree = "<group>"; };
 		DE46BD92587FC6B8A164094F /* Pods-egg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-egg.debug.xcconfig"; path = "Pods/Target Support Files/Pods-egg/Pods-egg.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBA8A9B1D823E0800B8EA70 /* MapKit.framework in Frameworks */,
+				4CBA8A991D823DFE00B8EA70 /* CoreLocation.framework in Frameworks */,
 				F339E77E1726A4C64F40A1EA /* Pods_egg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +131,7 @@
 		4C9C38B61D81F8C000E16F57 = {
 			isa = PBXGroup;
 			children = (
+				4CBA8A971D823DE500B8EA70 /* ARKit */,
 				4C9C38C11D81F8C100E16F57 /* egg */,
 				4C9C38D61D81F8C100E16F57 /* eggTests */,
 				4C9C38E11D81F8C100E16F57 /* eggUITests */,
@@ -117,7 +154,9 @@
 		4C9C38C11D81F8C100E16F57 /* egg */ = {
 			isa = PBXGroup;
 			children = (
+				4CBA8AB91D82424400B8EA70 /* Extends.swift */,
 				4CA6B4CC1D820E6E00D94026 /* Classes */,
+				4CBA8AB21D82410B00B8EA70 /* Models */,
 				4CA6B4CB1D820E5D00D94026 /* Resources */,
 				4C9C38CE1D81F8C100E16F57 /* Info.plist */,
 			);
@@ -167,13 +206,48 @@
 				4C9C38C21D81F8C100E16F57 /* AppDelegate.swift */,
 				4C9C38C41D81F8C100E16F57 /* ViewController.swift */,
 				4CA6B4CF1D82148C00D94026 /* TwitterViewController.swift */,
+				4CBA8A9C1D823F0500B8EA70 /* CameraViewController.swift */,
+				4CBA8A9E1D823F1300B8EA70 /* MapViewController.swift */,
+				4CBA8AA01D823F6900B8EA70 /* AR-BridgingHeader.h */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		4CBA8A971D823DE500B8EA70 /* ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA8AA11D82408F00B8EA70 /* ARCoordinate.h */,
+				4CBA8AA21D82408F00B8EA70 /* ARCoordinate.m */,
+				4CBA8AA31D82408F00B8EA70 /* ARGeoCoordinate.h */,
+				4CBA8AA41D82408F00B8EA70 /* ARGeoCoordinate.m */,
+				4CBA8AA51D82408F00B8EA70 /* ARKit.h */,
+				4CBA8AA61D82408F00B8EA70 /* ARKit.m */,
+				4CBA8AA71D82408F00B8EA70 /* ARLocationDelegate.h */,
+				4CBA8AA81D82408F00B8EA70 /* ARViewProtocol.h */,
+				4CBA8AA91D82408F00B8EA70 /* AugmentedRealityController.h */,
+				4CBA8AAA1D82408F00B8EA70 /* AugmentedRealityController.m */,
+				4CBA8AAB1D82408F00B8EA70 /* GEOLocations.h */,
+				4CBA8AAC1D82408F00B8EA70 /* GEOLocations.m */,
+			);
+			name = ARKit;
+			path = AR;
+			sourceTree = "<group>";
+		};
+		4CBA8AB21D82410B00B8EA70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA8AB31D82411A00B8EA70 /* MarkerView.swift */,
+				4CBA8AB41D82411A00B8EA70 /* Place.swift */,
+				4CBA8AB51D82411A00B8EA70 /* PlaceAnnotation.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		B29C57317CFEADA799976B8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CBA8A9A1D823E0800B8EA70 /* MapKit.framework */,
+				4CBA8A981D823DFE00B8EA70 /* CoreLocation.framework */,
 				3654D43BC9FD2237362C73E8 /* Pods_egg.framework */,
 			);
 			name = Frameworks;
@@ -382,8 +456,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBA8AAD1D82408F00B8EA70 /* ARCoordinate.m in Sources */,
 				4CA6B4D01D82148C00D94026 /* TwitterViewController.swift in Sources */,
+				4CBA8A9D1D823F0500B8EA70 /* CameraViewController.swift in Sources */,
+				4CBA8AB71D82411A00B8EA70 /* Place.swift in Sources */,
+				4CBA8AB81D82411A00B8EA70 /* PlaceAnnotation.swift in Sources */,
+				4CBA8ABA1D82424400B8EA70 /* Extends.swift in Sources */,
 				4C9C38C51D81F8C100E16F57 /* ViewController.swift in Sources */,
+				4CBA8AB11D82408F00B8EA70 /* GEOLocations.m in Sources */,
+				4CBA8A9F1D823F1300B8EA70 /* MapViewController.swift in Sources */,
+				4CBA8AB61D82411A00B8EA70 /* MarkerView.swift in Sources */,
+				4CBA8AAF1D82408F00B8EA70 /* ARKit.m in Sources */,
+				4CBA8AAE1D82408F00B8EA70 /* ARGeoCoordinate.m in Sources */,
+				4CBA8AB01D82408F00B8EA70 /* AugmentedRealityController.m in Sources */,
 				4C9C38C31D81F8C100E16F57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +625,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.egg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "egg/AR-BridgingHeader.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "egg/AR-BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -554,6 +641,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.egg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "egg/AR-BridgingHeader.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "egg/AR-BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
