@@ -36,7 +36,11 @@ class TwitterViewController: UIViewController {
             
             if (session != nil) {
                 print("signed in as \(session?.userName)");
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier: "map") as! MapViewController
+                viewController.loggedInAs = session?.userName
                 
+                self.present(viewController, animated: true, completion: nil)
                 
             } else {
                 print("error: \(error?.localizedDescription)");
@@ -44,5 +48,14 @@ class TwitterViewController: UIViewController {
         
         
         })
+    }
+    @IBAction func noTwitterLogin(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "map") as! MapViewController
+        viewController.loggedInAs = "GUEST"
+        
+        self.present(viewController, animated: true, completion: nil)
+        
     }
 }

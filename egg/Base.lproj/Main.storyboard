@@ -38,6 +38,17 @@
                                     <action selector="twitterLogin:" destination="UiK-eT-Uwh" eventType="touchUpInside" id="AIv-gO-YMZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLn-OJ-tKP">
+                                <rect key="frame" x="125" y="416" width="165" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="OratorStd" family="Orator Std" pointSize="15"/>
+                                <state key="normal" title="No Twitter?">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.0" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="noTwitterLogin:" destination="UiK-eT-Uwh" eventType="touchUpInside" id="C9P-LW-Lcn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.63137254901960782" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -47,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSa-fw-ZFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-710" y="-411"/>
+            <point key="canvasLocation" x="-367" y="42"/>
         </scene>
         <!--Intro Controller-->
         <scene sceneID="VZF-xC-aOJ">
@@ -160,12 +171,12 @@ the local news around you.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="429" y="71"/>
+            <point key="canvasLocation" x="926" y="-14"/>
         </scene>
         <!--map-->
         <scene sceneID="Ews-4p-mlf">
             <objects>
-                <viewController id="Lze-82-qq7" userLabel="map" customClass="MapViewController" customModule="egg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="map" id="Lze-82-qq7" userLabel="map" customClass="MapViewController" customModule="egg" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0X8-qJ-86c"/>
                         <viewControllerLayoutGuide type="bottom" id="vE8-mQ-yNe"/>
@@ -174,20 +185,45 @@ the local news around you.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Qxk-MC-2nk">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Qxk-MC-2nk">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRP-Zm-MtR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.74509803921568629" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Y8h-KN-LLB"/>
+                                    <constraint firstAttribute="height" constant="60" id="q94-js-0iC"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.99024218320846558" green="0.74535125494003296" blue="0.23467814922332764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="OratorStd" family="Orator Std" pointSize="17"/>
+                                    <color key="textColor" red="0.95972353219985962" green="0.056183524429798126" blue="0.33756494522094727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="HIN-c7-mhX"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qxk-MC-2nk" firstAttribute="leading" secondItem="WA6-jP-UKB" secondAttribute="leading" id="Dzj-OB-9iw"/>
+                            <constraint firstAttribute="trailing" secondItem="Qxk-MC-2nk" secondAttribute="trailing" id="K8k-AU-IUu"/>
+                            <constraint firstItem="vE8-mQ-yNe" firstAttribute="top" secondItem="Qxk-MC-2nk" secondAttribute="bottom" id="Qc1-8O-CRp"/>
+                            <constraint firstItem="Qxk-MC-2nk" firstAttribute="top" secondItem="WA6-jP-UKB" secondAttribute="top" id="Rvn-Fe-Q5Y"/>
+                            <constraint firstAttribute="trailing" secondItem="KRP-Zm-MtR" secondAttribute="trailing" id="SjT-La-5HU"/>
+                            <constraint firstItem="KRP-Zm-MtR" firstAttribute="top" secondItem="WA6-jP-UKB" secondAttribute="top" id="UkE-eT-K8a"/>
+                            <constraint firstItem="KRP-Zm-MtR" firstAttribute="leading" secondItem="WA6-jP-UKB" secondAttribute="leading" id="oZk-ne-aMt"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="_mapView" destination="Qxk-MC-2nk" id="Ogj-5N-qiG"/>
+                        <outlet property="usernameNav" destination="KRP-Zm-MtR" id="1lo-tp-gcI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCI-6m-IA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-293" y="42"/>
+            <point key="canvasLocation" x="276.81159420289856" y="41.576086956521742"/>
         </scene>
     </scenes>
     <resources>
