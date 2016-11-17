@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>JTMaterialTransition.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-egg.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-eggTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-eggUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -12,7 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>56DAD6F6D5F59B08F20521E03ACB9DC2</key>
+		<key>2626B06E5870A5D35518453F959B588D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>485038E173D26834965F5A35A6101BBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C897FD55FAB1427485F9F88DF3430BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>972C0C85397F16AB7C6BE916CD192BF4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

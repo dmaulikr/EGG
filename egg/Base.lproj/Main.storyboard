@@ -13,15 +13,12 @@
         <array key="OratorStd.otf">
             <string>OratorStd</string>
         </array>
-        <array key="PoplarStd.otf">
-            <string>PoplarStd</string>
-        </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Intro Controller-->
         <scene sceneID="VZF-xC-aOJ">
             <objects>
-                <viewController id="QAw-dF-UUT" sceneMemberID="viewController">
+                <viewController id="QAw-dF-UUT" customClass="IntroController" customModule="egg" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0hB-yh-3uG"/>
                         <viewControllerLayoutGuide type="bottom" id="0R6-0Z-Z01"/>
@@ -32,11 +29,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfh-dH-U0l">
                                 <rect key="frame" x="107" y="268" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.74509803921568629" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4Td-3z-dGY"/>
                                     <constraint firstAttribute="width" constant="200" id="ZwF-DC-Q3u"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="egg-logo-pink"/>
+                                <connections>
+                                    <action selector="didTouch:" destination="QAw-dF-UUT" eventType="touchUpInside" id="q52-Mb-Ccv"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfK-gq-Kfz">
                                 <rect key="frame" x="69" y="508" width="276" height="78"/>
@@ -44,7 +45,9 @@
                                     <constraint firstAttribute="height" constant="78" id="Ab8-Z2-RHe"/>
                                     <constraint firstAttribute="width" constant="276" id="Lhs-gL-6vJ"/>
                                 </constraints>
-                                <string key="text">Welcome to EGG News AR.A new way to experience the local news around you.</string>
+                                <string key="text">Welcome to EGG News AR.
+A new way to experience 
+the local news around you.</string>
                                 <fontDescription key="fontDescription" name="OratorStd" family="Orator Std" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -57,6 +60,9 @@
                             <constraint firstItem="OfK-gq-Kfz" firstAttribute="top" secondItem="sfh-dH-U0l" secondAttribute="bottom" constant="40" id="ewx-B9-ngi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="introLogo" destination="sfh-dH-U0l" id="iQe-Hb-Pil"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScM-Ug-jSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,18 +99,8 @@
                                     <segue destination="Lze-82-qq7" kind="show" id="QhK-Kj-0vg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGG." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pl6-J4-vfk">
-                                <rect key="frame" x="129.66666666666669" y="318" width="155.00000000000006" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="a72-RG-DFz"/>
-                                    <constraint firstAttribute="height" constant="100" id="ctj-NQ-Sa6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="PoplarStd" family="Poplar Std" pointSize="100"/>
-                                <color key="textColor" red="0.96078431372549022" green="0.0" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-90-PnB">
-                                <rect key="frame" x="157" y="429" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-90-PnB">
+                                <rect key="frame" x="157" y="0.0" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="gaR-hT-8uC"/>
                                     <constraint firstAttribute="height" constant="100" id="wbD-Ua-cKo"/>
@@ -117,13 +113,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pl6-J4-vfk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5HP-ds-FGj"/>
                             <constraint firstItem="oCi-NC-s7p" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RkX-mS-4WU"/>
                             <constraint firstItem="KTF-GT-zjK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VP4-P5-WvR"/>
-                            <constraint firstItem="bWQ-90-PnB" firstAttribute="top" secondItem="pl6-J4-vfk" secondAttribute="bottom" constant="11" id="bGn-QW-eoR"/>
                             <constraint firstItem="bWQ-90-PnB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h9t-KG-TOa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KTF-GT-zjK" secondAttribute="bottom" constant="20" id="maq-iP-dID"/>
-                            <constraint firstItem="pl6-J4-vfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="moL-Kl-Dj5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oCi-NC-s7p" secondAttribute="bottom" constant="20" id="s6j-gs-qYD"/>
                         </constraints>
                     </view>
@@ -133,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-332" y="38"/>
+            <point key="canvasLocation" x="429" y="71"/>
         </scene>
         <!--map-->
         <scene sceneID="Ews-4p-mlf">
@@ -151,28 +144,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGM-EX-BI9">
-                                <rect key="frame" x="158" y="639" width="98" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PoplarStd" family="Poplar Std" pointSize="30"/>
-                                <state key="normal" title="CAMERA.">
-                                    <color key="titleColor" red="0.97927111387252808" green="0.1668601930141449" blue="0.4158707857131958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="cameraAction" destination="Lze-82-qq7" eventType="touchUpInside" id="9Km-6l-Dc2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeq-TV-EpU">
-                                <rect key="frame" x="183" y="28" width="49" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PoplarStd" family="Poplar Std" pointSize="30"/>
-                                <state key="normal" title="ADD.">
-                                    <color key="titleColor" red="0.97927111389999999" green="0.16686019299999999" blue="0.41587078570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="addLoctionAction" destination="Lze-82-qq7" eventType="touchUpInside" id="E1v-oL-itK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -182,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCI-6m-IA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="38"/>
+            <point key="canvasLocation" x="-293" y="42"/>
         </scene>
     </scenes>
     <resources>

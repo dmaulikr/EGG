@@ -1,5 +1,6 @@
 PODS:
   - Fabric (1.6.8)
+  - JTMaterialTransition (2.0.1)
   - TwitterCore (2.4.0):
     - Fabric
   - TwitterKit (2.4.0):
@@ -7,12 +8,25 @@ PODS:
 
 DEPENDENCIES:
   - Fabric
+  - JTMaterialTransition (from `https://github.com/jonathantribouharet/JTMaterialTransition.git`)
   - TwitterCore
   - TwitterKit
 
+EXTERNAL SOURCES:
+  JTMaterialTransition:
+    :git: https://github.com/jonathantribouharet/JTMaterialTransition.git
+
+CHECKOUT OPTIONS:
+  JTMaterialTransition:
+    :commit: 637ed323df2e876fe9c63b6515a4378d1b95587d
+    :git: https://github.com/jonathantribouharet/JTMaterialTransition.git
+
 SPEC CHECKSUMS:
   Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
+  JTMaterialTransition: 2350b44b404d1982a7ba755866cc65da452f4eec
   TwitterCore: a139904c80805ad3dde9eef1100704f96f646d1d
   TwitterKit: 1cf9742edf9d182c1518cfdd6aaac0dfe313b38b
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 165e54a1846a8d1901d13ebd74689322c8fbf9d7
+
+COCOAPODS: 1.1.0.rc.2

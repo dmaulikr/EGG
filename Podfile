@@ -7,6 +7,8 @@ target 'egg' do
     pod 'TwitterKit'
     pod 'TwitterCore'
 
+    pod 'JTMaterialTransition', :git => 'https://github.com/jonathantribouharet/JTMaterialTransition.git'
+
 end
 
 target 'eggTests' do
