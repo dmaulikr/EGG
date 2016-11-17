@@ -3,49 +3,49 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "egg-logo-40px.png",
+      "filename" : "logo-40p.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "egg-logo-40px-1.png",
+      "filename" : "logo-60p.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "egg-logo-58px.png",
+      "filename" : "logo-58p.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "egg-logo-58px-1.png",
+      "filename" : "logo-87p.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "egg-logo-1.png",
+      "filename" : "logo-80p.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "egg-logo-6.png",
+      "filename" : "logo-120p-1.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "egg-logo-180px-1.png",
+      "filename" : "logo-120p.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "egg-logo-180px.png",
+      "filename" : "logo-180p.png",
       "scale" : "3x"
     }
   ],

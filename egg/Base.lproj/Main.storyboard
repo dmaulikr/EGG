@@ -1,17 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A286a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QAw-dF-UUT">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="OratorStd.otf">
+            <string>OratorStd</string>
+        </array>
         <array key="PoplarStd.otf">
             <string>PoplarStd</string>
         </array>
     </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="VZF-xC-aOJ">
+            <objects>
+                <viewController id="QAw-dF-UUT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0hB-yh-3uG"/>
+                        <viewControllerLayoutGuide type="bottom" id="0R6-0Z-Z01"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wD4-at-gAX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfh-dH-U0l">
+                                <rect key="frame" x="107" y="268" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4Td-3z-dGY"/>
+                                    <constraint firstAttribute="width" constant="200" id="ZwF-DC-Q3u"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="egg-logo-pink"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfK-gq-Kfz">
+                                <rect key="frame" x="69" y="508" width="276" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="Ab8-Z2-RHe"/>
+                                    <constraint firstAttribute="width" constant="276" id="Lhs-gL-6vJ"/>
+                                </constraints>
+                                <string key="text">Welcome to EGG News AR.A new way to experience the local news around you.</string>
+                                <fontDescription key="fontDescription" name="OratorStd" family="Orator Std" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.74509803921568629" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OfK-gq-Kfz" firstAttribute="centerX" secondItem="wD4-at-gAX" secondAttribute="centerX" id="NRv-eU-lLx"/>
+                            <constraint firstItem="sfh-dH-U0l" firstAttribute="centerX" secondItem="wD4-at-gAX" secondAttribute="centerX" id="QSY-og-4hz"/>
+                            <constraint firstItem="sfh-dH-U0l" firstAttribute="centerY" secondItem="wD4-at-gAX" secondAttribute="centerY" id="Zw6-cS-3rQ"/>
+                            <constraint firstItem="OfK-gq-Kfz" firstAttribute="top" secondItem="sfh-dH-U0l" secondAttribute="bottom" constant="40" id="ewx-B9-ngi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ScM-Ug-jSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1002.4" y="42.728635682158924"/>
+        </scene>
         <!--login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -25,6 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTF-GT-zjK">
+                                <rect key="frame" x="20" y="676" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BLg-w6-VC4"/>
                                     <constraint firstAttribute="width" constant="40" id="rZi-zm-xk0"/>
@@ -32,6 +83,7 @@
                                 <state key="normal" backgroundImage="camera"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-NC-s7p">
+                                <rect key="frame" x="354" y="676" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="iCB-ng-P72"/>
                                     <constraint firstAttribute="width" constant="40" id="pY4-Ci-Xhz"/>
@@ -42,6 +94,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EGG." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pl6-J4-vfk">
+                                <rect key="frame" x="129.66666666666669" y="318" width="155.00000000000006" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="a72-RG-DFz"/>
                                     <constraint firstAttribute="height" constant="100" id="ctj-NQ-Sa6"/>
@@ -51,6 +104,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-90-PnB">
+                                <rect key="frame" x="157" y="429" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="gaR-hT-8uC"/>
                                     <constraint firstAttribute="height" constant="100" id="wbD-Ua-cKo"/>
@@ -79,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
+            <point key="canvasLocation" x="-332" y="38"/>
         </scene>
         <!--map-->
         <scene sceneID="Ews-4p-mlf">
@@ -94,11 +148,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Qxk-MC-2nk">
-                                <frame key="frameInset" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGM-EX-BI9">
-                                <frame key="frameInset" minX="158" minY="639" width="98" height="42"/>
+                                <rect key="frame" x="158" y="639" width="98" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="PoplarStd" family="Poplar Std" pointSize="30"/>
                                 <state key="normal" title="CAMERA.">
@@ -109,7 +163,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeq-TV-EpU">
-                                <frame key="frameInset" minX="183" minY="28" width="49" height="42"/>
+                                <rect key="frame" x="183" y="28" width="49" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="PoplarStd" family="Poplar Std" pointSize="30"/>
                                 <state key="normal" title="ADD.">
@@ -128,11 +182,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCI-6m-IA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876.81159420289862" y="143.47826086956522"/>
+            <point key="canvasLocation" x="367" y="38"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera" width="256" height="256"/>
+        <image name="egg-logo-pink" width="1000" height="1000"/>
         <image name="map" width="256" height="256"/>
         <image name="twitter-notlogged" width="2000" height="2000"/>
     </resources>

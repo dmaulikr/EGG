@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C571E4C1DDDD9610095BBF4 /* OratorStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C571E4B1DDDD9610095BBF4 /* OratorStd.otf */; };
 		4C9C38C31D81F8C100E16F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C38C21D81F8C100E16F57 /* AppDelegate.swift */; };
 		4C9C38C51D81F8C100E16F57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C38C41D81F8C100E16F57 /* ViewController.swift */; };
 		4C9C38C81D81F8C100E16F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C9C38C61D81F8C100E16F57 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		3654D43BC9FD2237362C73E8 /* Pods_egg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_egg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C571E4B1DDDD9610095BBF4 /* OratorStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OratorStd.otf; sourceTree = "<group>"; };
 		4C9C38BF1D81F8C100E16F57 /* egg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = egg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9C38C21D81F8C100E16F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C9C38C41D81F8C100E16F57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 		4C9C38E21D81F8C100E16F57 /* eggUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggUITests.swift; sourceTree = "<group>"; };
 		4C9C38E41D81F8C100E16F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA6B4C91D820E5A00D94026 /* PoplarStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoplarStd.otf; sourceTree = "<group>"; };
-		4CA6B4CD1D8212F300D94026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		4CA6B4CD1D8212F300D94026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CA6B4CF1D82148C00D94026 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		4CBA8A981D823DFE00B8EA70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4CBA8A9A1D823E0800B8EA70 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -133,7 +135,6 @@
 			children = (
 				4CBA8A971D823DE500B8EA70 /* ARKit */,
 				4C9C38C11D81F8C100E16F57 /* egg */,
-				4CBA8ABB1D82436A00B8EA70 /* Supporting Files */,
 				4C9C38D61D81F8C100E16F57 /* eggTests */,
 				4C9C38E11D81F8C100E16F57 /* eggUITests */,
 				4C9C38C01D81F8C100E16F57 /* Products */,
@@ -155,10 +156,10 @@
 		4C9C38C11D81F8C100E16F57 /* egg */ = {
 			isa = PBXGroup;
 			children = (
-				4CBA8AB91D82424400B8EA70 /* Extends.swift */,
 				4CA6B4CC1D820E6E00D94026 /* Classes */,
 				4CBA8AB21D82410B00B8EA70 /* Models */,
 				4CA6B4CB1D820E5D00D94026 /* Resources */,
+				4CBA8ABB1D82436A00B8EA70 /* Supporting Files */,
 			);
 			path = egg;
 			sourceTree = "<group>";
@@ -184,7 +185,7 @@
 		4CA6B4C81D820E5A00D94026 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				4CA6B4CD1D8212F300D94026 /* Assets.xcassets */,
+				4C571E4B1DDDD9610095BBF4 /* OratorStd.otf */,
 				4CA6B4C91D820E5A00D94026 /* PoplarStd.otf */,
 			);
 			path = fonts;
@@ -193,6 +194,7 @@
 		4CA6B4CB1D820E5D00D94026 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4CA6B4CD1D8212F300D94026 /* Assets.xcassets */,
 				4CA6B4C81D820E5A00D94026 /* fonts */,
 				4C9C38C61D81F8C100E16F57 /* Main.storyboard */,
 				4C9C38CB1D81F8C100E16F57 /* LaunchScreen.storyboard */,
@@ -203,6 +205,7 @@
 		4CA6B4CC1D820E6E00D94026 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4CBA8AB91D82424400B8EA70 /* Extends.swift */,
 				4C9C38C21D81F8C100E16F57 /* AppDelegate.swift */,
 				4C9C38C41D81F8C100E16F57 /* ViewController.swift */,
 				4CA6B4CF1D82148C00D94026 /* TwitterViewController.swift */,
@@ -249,7 +252,6 @@
 				4C9C38CE1D81F8C100E16F57 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			path = egg;
 			sourceTree = "<group>";
 		};
 		B29C57317CFEADA799976B8B /* Frameworks */ = {
@@ -376,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C571E4C1DDDD9610095BBF4 /* OratorStd.otf in Resources */,
 				4C9C38CD1D81F8C100E16F57 /* LaunchScreen.storyboard in Resources */,
 				4CA6B4CA1D820E5A00D94026 /* PoplarStd.otf in Resources */,
 				4CA6B4CE1D8212F300D94026 /* Assets.xcassets in Resources */,
