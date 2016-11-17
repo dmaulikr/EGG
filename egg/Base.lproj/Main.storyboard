@@ -15,6 +15,40 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Twitter View Controller-->
+        <scene sceneID="lr1-3d-4YA">
+            <objects>
+                <viewController storyboardIdentifier="twitterLogin" id="UiK-eT-Uwh" customClass="TwitterViewController" customModule="egg" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SLw-CG-8SN"/>
+                        <viewControllerLayoutGuide type="bottom" id="iHT-HG-T7c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hyy-vN-znB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDj-2h-T9Y">
+                                <rect key="frame" x="110" y="350" width="195" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="OratorStd" family="Orator Std" pointSize="25"/>
+                                <state key="normal" title="Twitter Login">
+                                    <color key="titleColor" red="0.96078431372549022" green="0.0" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterLogin:" destination="UiK-eT-Uwh" eventType="touchUpInside" id="AIv-gO-YMZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63137254901960782" green="0.99215686274509807" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="twitterLogin" destination="WDj-2h-T9Y" id="KRA-wf-C2Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSa-fw-ZFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-710" y="-411"/>
+        </scene>
         <!--Intro Controller-->
         <scene sceneID="VZF-xC-aOJ">
             <objects>

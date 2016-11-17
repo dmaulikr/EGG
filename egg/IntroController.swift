@@ -30,7 +30,9 @@ class IntroController: UIViewController {
 
     @IBAction func didTouch(_ sender: Any) {
         
-        let controller = TwitterViewController()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let controller = storyboard.instantiateViewController(withIdentifier: "twitterLogin")
         
         controller.modalPresentationStyle = .custom
         controller.transitioningDelegate = self.transition

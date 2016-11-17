@@ -11,7 +11,7 @@ import TwitterKit
 
 class TwitterViewController: UIViewController {
     
-//    weak var twitterLogin: UIButton!
+    @IBOutlet weak var twitterLogin: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,31 +20,29 @@ class TwitterViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(colorLiteralRed: 162.0/256.0, green: 254.0/256.0, blue: 1.0, alpha: 1.0)
         
-//        let store = Twitter.sharedInstance().sessionStore
-//        let sessions = store.existingUserSessions()
-//        
-//        if (sessions.count != 0) {
-//            self.twitterLogin.setBackgroundImage(UIImage(named: "twitter-loggedon.png"), for: .normal)
-//        }
+        let store = Twitter.sharedInstance().sessionStore
+        let sessions = store.existingUserSessions()
+        
+        if (sessions.count != 0) {
+        }
     }
     
     
-//    
-//    
-//     @IBAction func twitterLogin(_ sender: AnyObject) {
-//    
-//        Twitter.sharedInstance().logIn(completion: { session, error in
-//            
-//            if (session != nil) {
-//                print("signed in as \(session?.userName)");
-//                
-//                self.twitterLogin.setBackgroundImage(UIImage(named: "twitter-loggedon.png"), for: .normal)
-//                
-//            } else {
-//                print("error: \(error?.localizedDescription)");
-//            }
-//        
-//        
-//        })
-//    }
+    
+    
+     @IBAction func twitterLogin(_ sender: AnyObject) {
+    
+        Twitter.sharedInstance().logIn(completion: { session, error in
+            
+            if (session != nil) {
+                print("signed in as \(session?.userName)");
+                
+                
+            } else {
+                print("error: \(error?.localizedDescription)");
+            }
+        
+        
+        })
+    }
 }
