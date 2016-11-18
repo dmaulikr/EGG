@@ -37,7 +37,7 @@ class TwitterViewController: UIViewController {
             if (session != nil) {
                 print("signed in as \(session?.userName)");
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let viewController = storyboard.instantiateViewController(withIdentifier: "map") as! MapViewController
+            let viewController = storyboard.instantiateViewController(withIdentifier: "ar") as! CameraViewController
                 viewController.loggedInAs = session?.userName
                 
                 self.present(viewController, animated: true, completion: nil)
@@ -52,7 +52,7 @@ class TwitterViewController: UIViewController {
     @IBAction func noTwitterLogin(_ sender: Any) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "map") as! MapViewController
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ar") as! CameraViewController
         viewController.loggedInAs = "GUEST"
         
         self.present(viewController, animated: true, completion: nil)

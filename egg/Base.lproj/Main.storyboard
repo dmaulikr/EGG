@@ -96,11 +96,20 @@ the local news around you.</string>
                                 <fontDescription key="fontDescription" name="OratorStd" family="Orator Std" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tap-here" translatesAutoresizingMaskIntoConstraints="NO" id="3Du-FH-nam">
+                                <rect key="frame" x="20" y="154" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="OZd-Th-avF"/>
+                                    <constraint firstAttribute="width" constant="240" id="ZZj-Yc-BTv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686274509807" green="0.74509803921568629" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="OfK-gq-Kfz" firstAttribute="top" secondItem="3Du-FH-nam" secondAttribute="bottom" constant="226" id="BtG-hd-UPc"/>
                             <constraint firstItem="OfK-gq-Kfz" firstAttribute="centerX" secondItem="wD4-at-gAX" secondAttribute="centerX" id="NRv-eU-lLx"/>
                             <constraint firstItem="sfh-dH-U0l" firstAttribute="centerX" secondItem="wD4-at-gAX" secondAttribute="centerX" id="QSY-og-4hz"/>
+                            <constraint firstItem="3Du-FH-nam" firstAttribute="leading" secondItem="wD4-at-gAX" secondAttribute="leadingMargin" id="T8L-qg-dDj"/>
                             <constraint firstItem="sfh-dH-U0l" firstAttribute="centerY" secondItem="wD4-at-gAX" secondAttribute="centerY" id="Zw6-cS-3rQ"/>
                             <constraint firstItem="OfK-gq-Kfz" firstAttribute="top" secondItem="sfh-dH-U0l" secondAttribute="bottom" constant="40" id="ewx-B9-ngi"/>
                         </constraints>
@@ -116,7 +125,7 @@ the local news around you.</string>
         <!--login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="login" customClass="CameraViewController" customModule="egg" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ar" id="BYZ-38-t0r" userLabel="login" customClass="CameraViewController" customModule="egg" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -125,14 +134,22 @@ the local news around you.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTF-GT-zjK">
-                                <rect key="frame" x="20" y="676" width="40" height="40"/>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Vu-08-rZq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="BLg-w6-VC4"/>
-                                    <constraint firstAttribute="width" constant="40" id="rZi-zm-xk0"/>
+                                    <constraint firstAttribute="width" constant="414" id="7Al-md-Cdo"/>
+                                    <constraint firstAttribute="height" constant="60" id="FPd-Pc-Zcm"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="camera"/>
-                            </button>
+                                <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="OratorStd" family="Orator Std" pointSize="17"/>
+                                    <color key="textColor" red="0.95972353219999995" green="0.056183524429999999" blue="0.33756494520000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="SOs-K8-z8G"/>
+                                </items>
+                            </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCi-NC-s7p">
                                 <rect key="frame" x="354" y="676" width="40" height="40"/>
                                 <constraints>
@@ -141,37 +158,23 @@ the local news around you.</string>
                                 </constraints>
                                 <state key="normal" backgroundImage="map"/>
                                 <connections>
-                                    <segue destination="Lze-82-qq7" kind="show" id="QhK-Kj-0vg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-90-PnB">
-                                <rect key="frame" x="157" y="0.0" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="gaR-hT-8uC"/>
-                                    <constraint firstAttribute="height" constant="100" id="wbD-Ua-cKo"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="twitter-notlogged"/>
-                                <connections>
-                                    <action selector="twitterLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VlJ-oB-XVk"/>
+                                    <segue destination="Lze-82-qq7" kind="show" id="P5F-kC-s6b"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oCi-NC-s7p" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RkX-mS-4WU"/>
-                            <constraint firstItem="KTF-GT-zjK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VP4-P5-WvR"/>
-                            <constraint firstItem="bWQ-90-PnB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h9t-KG-TOa"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KTF-GT-zjK" secondAttribute="bottom" constant="20" id="maq-iP-dID"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oCi-NC-s7p" secondAttribute="bottom" constant="20" id="s6j-gs-qYD"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="twitterLogin" destination="bWQ-90-PnB" id="LhJ-RE-6fU"/>
+                        <outlet property="usernameNav" destination="4Vu-08-rZq" id="cmv-MF-yqf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="-14"/>
+            <point key="canvasLocation" x="293" y="42"/>
         </scene>
         <!--map-->
         <scene sceneID="Ews-4p-mlf">
@@ -204,6 +207,14 @@ the local news around you.</string>
                                     <navigationItem title="Title" id="HIN-c7-mhX"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTF-GT-zjK">
+                                <rect key="frame" x="354" y="676" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BLg-w6-VC4"/>
+                                    <constraint firstAttribute="width" constant="40" id="rZi-zm-xk0"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="camera"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -213,6 +224,7 @@ the local news around you.</string>
                             <constraint firstItem="Qxk-MC-2nk" firstAttribute="top" secondItem="WA6-jP-UKB" secondAttribute="top" id="Rvn-Fe-Q5Y"/>
                             <constraint firstAttribute="trailing" secondItem="KRP-Zm-MtR" secondAttribute="trailing" id="SjT-La-5HU"/>
                             <constraint firstItem="KRP-Zm-MtR" firstAttribute="top" secondItem="WA6-jP-UKB" secondAttribute="top" id="UkE-eT-K8a"/>
+                            <constraint firstItem="KTF-GT-zjK" firstAttribute="leading" secondItem="WA6-jP-UKB" secondAttribute="leadingMargin" constant="334" id="iur-rx-zqe"/>
                             <constraint firstItem="KRP-Zm-MtR" firstAttribute="leading" secondItem="WA6-jP-UKB" secondAttribute="leading" id="oZk-ne-aMt"/>
                         </constraints>
                     </view>
@@ -223,13 +235,13 @@ the local news around you.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCI-6m-IA5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276.81159420289856" y="41.576086956521742"/>
+            <point key="canvasLocation" x="948" y="70"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera" width="256" height="256"/>
         <image name="egg-logo-pink" width="1000" height="1000"/>
         <image name="map" width="256" height="256"/>
-        <image name="twitter-notlogged" width="2000" height="2000"/>
+        <image name="tap-here" width="500" height="500"/>
     </resources>
 </document>
