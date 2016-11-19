@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.0.1)
   - Fabric (1.6.8)
   - JTMaterialTransition (2.0.1)
   - TwitterCore (2.4.0):
@@ -7,6 +8,7 @@ PODS:
     - TwitterCore (= 2.4.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.0)
   - Fabric
   - JTMaterialTransition (from `https://github.com/jonathantribouharet/JTMaterialTransition.git`)
   - TwitterCore
@@ -22,11 +24,12 @@ CHECKOUT OPTIONS:
     :git: https://github.com/jonathantribouharet/JTMaterialTransition.git
 
 SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
   JTMaterialTransition: 2350b44b404d1982a7ba755866cc65da452f4eec
   TwitterCore: a139904c80805ad3dde9eef1100704f96f646d1d
   TwitterKit: 1cf9742edf9d182c1518cfdd6aaac0dfe313b38b
 
-PODFILE CHECKSUM: 165e54a1846a8d1901d13ebd74689322c8fbf9d7
+PODFILE CHECKSUM: e825471f5bc01fe0cf0e0a3a2e1a44103c891143
 
 COCOAPODS: 1.1.0.rc.2

@@ -36,6 +36,13 @@ class TwitterViewController: UIViewController {
             
             if (session != nil) {
                 print("signed in as \(session?.userName)");
+                
+                
+                let client = TWTRAPIClient()
+                
+                
+                
+                
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let viewController = storyboard.instantiateViewController(withIdentifier: "ar") as! CameraViewController
                 viewController.loggedInAs = session?.userName

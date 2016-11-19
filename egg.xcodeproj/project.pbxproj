@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11F5F8450793E686E0320EE6 /* Pods_egg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15ED86964D689536C18125C /* Pods_egg.framework */; };
+		4C33197F1DE0F6AB0043453F /* TweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33197E1DE0F6AB0043453F /* TweetController.swift */; };
 		4C571E4C1DDDD9610095BBF4 /* OratorStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C571E4B1DDDD9610095BBF4 /* OratorStd.otf */; };
 		4C571E4F1DDDE0D80095BBF4 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C571E4E1DDDE0D80095BBF4 /* IntroController.swift */; };
 		4C9C38C31D81F8C100E16F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C38C21D81F8C100E16F57 /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		08A101D051FA750FAA625C84 /* Pods-eggUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eggUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-eggUITests/Pods-eggUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2708F10AFE5427E1E36821B4 /* Pods-eggUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eggUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eggUITests/Pods-eggUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C33197E1DE0F6AB0043453F /* TweetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetController.swift; sourceTree = "<group>"; };
 		4C571E4B1DDDD9610095BBF4 /* OratorStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OratorStd.otf; sourceTree = "<group>"; };
 		4C571E4E1DDDE0D80095BBF4 /* IntroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
 		4C9C38BF1D81F8C100E16F57 /* egg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = egg.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +229,7 @@
 				4C9C38C41D81F8C100E16F57 /* ViewController.swift */,
 				4CA6B4CF1D82148C00D94026 /* TwitterViewController.swift */,
 				4C571E4E1DDDE0D80095BBF4 /* IntroController.swift */,
+				4C33197E1DE0F6AB0043453F /* TweetController.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				4CBA8AB11D82408F00B8EA70 /* GEOLocations.m in Sources */,
 				4CBA8A9F1D823F1300B8EA70 /* MapViewController.swift in Sources */,
 				4C571E4F1DDDE0D80095BBF4 /* IntroController.swift in Sources */,
+				4C33197F1DE0F6AB0043453F /* TweetController.swift in Sources */,
 				4CBA8AB61D82411A00B8EA70 /* MarkerView.swift in Sources */,
 				4CBA8AAF1D82408F00B8EA70 /* ARKit.m in Sources */,
 				4CBA8AAE1D82408F00B8EA70 /* ARGeoCoordinate.m in Sources */,
@@ -704,7 +708,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -747,7 +751,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '10.0'
 use_frameworks!
 
 target 'egg' do
@@ -6,6 +6,8 @@ target 'egg' do
     pod 'Fabric'
     pod 'TwitterKit'
     pod 'TwitterCore'
+
+    pod 'Alamofire', '~> 4.0'
 
     pod 'JTMaterialTransition', :git => 'https://github.com/jonathantribouharet/JTMaterialTransition.git'
 

@@ -16,17 +16,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     var updatingLocation = false
     @IBOutlet weak var _mapView: MKMapView!
     
-    var loggedInAs: String!
     
-    @IBOutlet weak var usernameNav: UINavigationBar!
-
     
     var locations = [Place]()
     var currentLocation : CLLocation?
     
     override func viewDidLoad() {
         
-        usernameNav.topItem?.title = "Logged In As \(self.loggedInAs!)"
         
         super.viewDidLoad()
         let authStatus : CLAuthorizationStatus = CLLocationManager.authorizationStatus()
